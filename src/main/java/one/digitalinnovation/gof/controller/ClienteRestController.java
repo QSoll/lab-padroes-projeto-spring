@@ -9,10 +9,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import one.digitalinnovation.gof.model.Cliente;
 import one.digitalinnovation.gof.service.ClienteService;
+import java.util.List;
+
 
 /**
  * Esse {@link RestController} representa nossa <b>Facade</b>, pois abstrai toda
@@ -27,6 +30,13 @@ public class ClienteRestController {
 
 	@Autowired
 	private ClienteService clienteService;
+
+	@GetMapping("/buscar")
+public ResponseEntity<List<Cliente>> buscarPorNome(@RequestParam String nome) {
+    List<Cliente> clientes = clienteService.buscarPorNome(nome);
+    return ResponseEntity.ok(clientes);
+}
+
 
 	@GetMapping
 	public ResponseEntity<Iterable<Cliente>> buscarTodos() {

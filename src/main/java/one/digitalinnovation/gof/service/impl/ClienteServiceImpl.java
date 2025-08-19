@@ -1,5 +1,7 @@
 package one.digitalinnovation.gof.service.impl;
 
+import java.util.List;
+
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +14,8 @@ import one.digitalinnovation.gof.model.EnderecoRepository;
 import one.digitalinnovation.gof.service.ClienteService;
 import one.digitalinnovation.gof.service.ViaCepService;
 
+
+
 /**
  * Implementação da <b>Strategy</b> {@link ClienteService}, a qual pode ser
  * injetada pelo Spring (via {@link Autowired}). Com isso, como essa classe é um
@@ -21,6 +25,12 @@ import one.digitalinnovation.gof.service.ViaCepService;
  */
 @Service
 public class ClienteServiceImpl implements ClienteService {
+
+	@Override
+public List<Cliente> buscarPorNome(String nome) {
+    return clienteRepository.findByNomeContainingIgnoreCase(nome);
+}
+
 
 	// Singleton: Injetar os componentes do Spring com @Autowired.
 	@Autowired

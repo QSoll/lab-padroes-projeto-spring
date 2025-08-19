@@ -15,11 +15,18 @@
 	<name>lab-padroes-projeto-spring</name>
 	<description>Exemplos de Padrões de Projeto em Spring</description>
 	
-	<properties>
+	<!--<properties>
 		<java.version>11</java.version>
 		<openapi.version>1.5.10</openapi.version>
 		<spring-cloud.version>2020.0.3</spring-cloud.version>
-	</properties>
+	</properties>-->
+
+	<properties>
+    <java.version>17</java.version>
+    <openapi.version>1.5.10</openapi.version>
+    <spring-cloud.version>2020.0.3</spring-cloud.version>
+</properties>
+
 	
 	<dependencies>
 		<!-- Spring Data JPA (adicionado via Spring Initializr) -->
