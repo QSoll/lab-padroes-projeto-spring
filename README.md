@@ -2,7 +2,7 @@
 
 Este repositório contém a implementação de diversos padrões de projeto explorados no Lab **"Explorando Padrões de Projeto na Prática com Java"**, utilizando o **Spring Framework** como base para construção de uma API REST robusta e extensível.
 
-## 🧠 Padrões de Projeto Aplicados
+## Padrões de Projeto Aplicados
 
 Este projeto demonstra o uso prático de alguns dos principais padrões do catálogo GoF:
 
@@ -28,6 +28,7 @@ Código
 
 ### Exemplo de resposta:
 
+
 ```json
 [
   {
@@ -41,6 +42,7 @@ Código
     }
   }
 ]
+```
 
 ## Tecnologias Utilizadas
 
