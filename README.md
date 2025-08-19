@@ -1,4 +1,6 @@
-# Explorando Padrões de Projeto na Prática com Java
+# Santander 2025 - Back-End com Java
+
+## Explorando Padrões de Projeto na Prática com Java
 
 Este repositório contém a implementação de diversos padrões de projeto explorados no Lab **"Explorando Padrões de Projeto na Prática com Java"**, utilizando o **Spring Framework** como base para construção de uma API REST robusta e extensível.
 
